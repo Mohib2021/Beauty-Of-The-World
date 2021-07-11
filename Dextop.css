@@ -1,0 +1,72 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+.logo{
+    text-align: left;
+    padding: 10px 0px;
+}
+ul.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding: 5px;
+}
+.navigation{
+    padding: 0px;
+}
+
+.navItem a{
+    display: inline;
+    float: left;
+    background: transparent;
+    border-radius: 0px;
+    margin:  0px 15px;
+    padding: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+.navBar{
+    display: none;
+}
+
+.navItem a:hover{
+   border-bottom: 2px solid orange;
+   
+}
+
+.heading{
+    height:60vh;
+}
+
+/* header section ends here */
+.card{
+    margin-top: 10px;
+}
+
+
+/* card ends here */
+
+.why{
+    margin-top: 0px;
+    padding: 0px;
+}
+.location > h3{
+    margin-top: 0px;
+}

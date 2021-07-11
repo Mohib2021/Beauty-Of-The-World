@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+[class*="col-"]{
+    width: 100%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+.changeText{
+    color: rgb(243, 181, 12);
+}
+.cursor{
+    border: 1.5px solid white;
+    background: white;
+    margin-left: 3px;
+    animation: anim 1s ease infinite;
+}
+@keyframes anim {
+0%{
+    visibility: hidden;
+}
+25%{
+    visibility: hidden;
+}
+50%{
+    visibility: visible;
+}
+75%{
+    visibility: hidden;
+}
+100%{
+    visibility: visible;
+}
+
+}
+
+.straight{
+    animation: none;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.slideImage{
+
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -100;
+    object-fit: cover;
+    
+   
+}
+.animation{
+    animation: animation 2s ease;
+    transition: 2s;
+}
+@keyframes animation {
+    from{
+        clip-path: circle(8.6% at 100% 0);
+    }
+    to{
+        clip-path: circle(141.4% at 100% 0);
+    }
+}
+.slide::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.726);
+    top: 0;
+    z-index: -1;
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.head{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.logo{
+    position: relative;
+}
+
+.logo h1{
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+.navBar{
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    
+}
+.navBar div{
+    width: 40px;
+    height: 3px;
+    background: white;
+    margin: 3px;
+    transition: .8s;
+
+}
+
+.nav{
+    list-style: none;
+}
+.navItem{
+    margin: 0px;
+}
+.navItem a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 5px;
+    
+    
+}
+
+
+.toggle .div1{
+    transform:rotate(-45deg) translate(-4px, 9px) ;
+    height: 4px;
+}
+.toggle .div2{
+    opacity: 0;
+}
+.toggle .div3{
+    opacity: 0;
+}
+.toggle .div4{
+    transform: rotate(45deg) translate(-4px, -9px);
+    height: 4px;
+}
+
+.heading{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+}
+.headText h1{
+    margin-bottom: 10px;
+}
+
+/* header section ends here */
+main{
+    background: rgb(93, 97, 92);
+    
+}
+
+.text{
+    text-align: center;
+    padding-top: 20px;
+}
+.text h2{
+    border-bottom: 2px solid white;
+    margin-bottom: 7px;
+
+}
+.text p{
+    margin-bottom: 10px;
+}
+.card{
+    margin-top: 20px;
+    background: rgb(73, 70, 70);
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 4px rgb(46, 44, 44);
+}
+.card .img{
+    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.548)), url(image/Card3.jpg);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.card .img1{
+    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.548)), url(image/Card1.jpg);
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card .img2{
+    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.548)), url(image/Card2.jpg);
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card h3{
+    background: rgb(37, 36, 36);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* card ends here */
+
+.team{
+    text-align: center;
+    margin-top: 15px;
+}
+.team h2{
+    margin-bottom: 7px;
+    border-bottom: 2px solid white;
+}
+.person{
+    box-shadow: 2px 2px 4px 4px rgb(46, 44, 44);
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+    background: rgb(73, 70, 70);
+}
+.person img{
+    width: 100%;
+    border-radius: 100% 50%;
+    border: 2px solid white;
+}
+.person h3{
+    background:rgb(37, 36, 36);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.timer {
+    text-align: center;
+}
+.details1{
+   
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(73, 70, 70);
+    box-shadow: 2px 2px 4px 4px rgb(46, 44, 44);
+
+}
+/* team ends here */
+hr{
+    margin-bottom: 7px;
+}
+.about> h2{
+    margin-top: 15px;
+    text-align: center;
+}
+.about ul{
+    list-style-position: inside;
+}
+label,input{
+    display: block;
+    padding: 5px 0px;
+    
+}
+input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+input[type="submit"], input[type="reset"]{
+    display: inline;
+    padding: 5px;
+    font-size: 1rem;
+    width: 120px;
+    height: 35px;
+    margin-top: 10px;
+    background: rgb(63, 59, 59);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.submit:hover{
+    background:rgb(44, 41, 41); ;
+}
+.reset:hover{
+    background:rgb(44, 41, 41); ;
+}
+input[type="radio"]{
+    display: inline;
+}
+.round{
+    display: flex;
+    justify-content:space-between;
+}
+.why{
+    margin-top: 15px;
+
+}
+.why > h3{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.ans li{
+    line-height: 20px;
+}
+
+/* get us starts here */
+.getUs{
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.getUs > h2{
+    text-align: center;
+}
+iframe{
+    height: 200px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.address > h3{
+    text-align: center;
+}
+address{
+    margin-top: 15px;
+}
+.location > h3, address{
+    text-align: center;
+}
+.location > h3{
+    margin-top: 10px;
+}
+.line{
+    width: 200px;
+    height: 2px;
+    background: white;
+    margin: 0 auto;
+}
+footer{
+    
+    align-items: center;
+    background: rgb(32, 31, 31);
+    width: 100%;
+    font-size: 15px;
+}
+.line2{
+    width: 130px;
+    height: 2px;
+    background: white;
+}
+footer ul{
+    list-style-position: inside;
+    
+}
+.finish{
+    text-align: center;
+}
+
+
+@media  screen and (max-width: 992px) {
+  
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+    .nav{
+        
+        position: fixed;
+        top: 0px;
+        left: -300px;
+        width: 250px;
+        background: rgb(37, 35, 35);
+        height: 100vh;
+        transition: 1s;
+        border-radius: 0px 15px 15px 0px;
+        
+        
+        
+    }
+    .navShow{
+        left: 0px;
+        transition: 1s;
+    }
+    .navItem{
+        padding: 10px;
+        margin: 10px;
+        
+    }
+   .navItem a{
+    border-bottom: 1px solid white;
+   }
+    
+    .card .img2{
+        height: 350px;
+    }
+   
+}
+
+@media  screen and (max-width: 550px) {
+  
+    [class*="col-"]{
+        width: 100%;
+    }
+   
+    .nav{
+        
+        position: fixed;
+        top: 0px;
+        left: -300px;
+        width: 250px;
+        background: rgb(36, 33, 33);
+        height: 100vh;
+        transition: 1s;
+        
+        
+        
+    }
+    .navShow{
+        left: 0px;
+        transition: 1s;
+    }
+    .navItem{
+        padding: 10px;
+        margin: 10px;
+        
+    }
+    .card .img{
+        height: 250px;
+    }
+    .card .img1{
+        height: 250px;
+    }
+    .card .img2{
+        height: 250px;
+    }
+   
+}
